@@ -51,3 +51,6 @@
 /RosetteBuilder/nbproject/private/
 /jhelp/build/
 /javafx/build/
+examples_custom/
+javafx/release/
+jhelp/release/
