@@ -63,20 +63,20 @@ class COrnChildFactory extends ChildFactory.Detachable<CLclass> implements Prope
 
   @Override
   protected Node createNodeForKey(CLclass key) {
-    if (key instanceof Comment) {
-      return new CommentNode((Comment) key);
-    } else if (key instanceof Controls) {
-      return new ControlsNode((Controls) key);
-    } else if (key instanceof Patterns) {
-      return new PatternsNode((Patterns) key);
-    } else if (key instanceof Profiles) {
-      return new ProfilesNode((Profiles) key);
-    } else if (key instanceof Cutters) {
-      return new CuttersNode((Cutters) key);
-    } else if (key instanceof Outline) {
-      return new OutlineNode((Outline) key);
-    } else if (key instanceof CutPoints) {
-      return new CutPointsNode((CutPoints) key);
+    if (key instanceof Comment comment) {
+      return new CommentNode(comment);
+    } else if (key instanceof Controls controls) {
+      return new ControlsNode(controls);
+    } else if (key instanceof Patterns patterns) {
+      return new PatternsNode(patterns);
+    } else if (key instanceof Profiles profiles) {
+      return new ProfilesNode(profiles);
+    } else if (key instanceof Cutters cutters) {
+      return new CuttersNode(cutters);
+    } else if (key instanceof Outline outline) {
+      return new OutlineNode(outline);
+    } else if (key instanceof CutPoints cutPoints) {
+      return new CutPointsNode(cutPoints);
     }
     return null;
   }
